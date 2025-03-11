@@ -1,11 +1,14 @@
 import React from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation'
 
 interface NavBarProps {
   toggle: () => void;
 }
 
 const NavBar: React.FC<NavBarProps> = ({ toggle }) => {
+  const pathName = usePathname();
+
   return (
     <>
       <div className="w-full h-14 border-2 border-red-500 bg-white opacity-80 sticky">
@@ -18,22 +21,22 @@ const NavBar: React.FC<NavBarProps> = ({ toggle }) => {
             <ul className="hidden md:flex gap-x-6 text-black">
               <li>
                 <Link href="/">
-                  <p className="hover:underline hover:text-opacity-10">Home</p>
+                  <p className={`hover:underline hover:text-opacity-10 hover:font-semibold transition-all duration-300 ease-in-out  ${pathName == "/" ? 'font-semibold underline': ""}`}>Home</p>
                 </Link>
               </li>
               <li>
                 <Link href="/properties">
-                  <p>Properties</p>
+                  <p className={`hover:underline hover:text-opacity-10 hover:font-semibold transition-all duration-300 ease-in-out  ${pathName == "/properties" ? 'font-semibold underline': ""}`}>Properties</p>
                 </Link>
               </li>
               <li>
                 <Link href="/about">
-                  <p>About</p>
+                  <p className={`hover:underline hover:text-opacity-10 hover:font-semibold transition-all duration-300 ease-in-out  ${pathName == "/about" ? 'font-semibold underline': ""}`}>About</p>
                 </Link>
               </li>
               <li>
                 <Link href="/contact">
-                  <p>Contact</p>
+                  <p className={`hover:underline hover:text-opacity-10 hover:font-semibold transition-all duration-300 ease-in-out  ${pathName == "/contact" ? 'font-semibold underline': ""}`}>Contact</p>
                 </Link>
               </li>
             </ul>
