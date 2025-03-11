@@ -1,0 +1,424 @@
+{
+  "site_info": {
+    "name": "The Grand",
+    "description": "Luxury residential buildings offering modern amenities and elegant living spaces.",
+    "contact": {
+      "email": "info@thegrandliving.com",
+      "phone": "(555) 123-4567",
+      "address": "123 Main Street, Metropolis, NY 10001"
+    },
+    "social_links": {
+      "instagram": "https://instagram.com/thegrandliving",
+      "facebook": "https://facebook.com/thegrandliving",
+      "twitter": "https://twitter.com/thegrandliving"
+    },
+    "office_hours": {
+      "monday_to_friday": "9:00 AM - 6:00 PM",
+      "saturday": "10:00 AM - 4:00 PM",
+      "sunday": "Closed"
+    }
+  },
+  "buildings": [
+    {
+      "name": "The Grand at Penn",
+      "address": "705 Newark Ave, Elizabeth, NJ 07208",
+      "description": "Luxurious apartments",
+      "floors": 5,
+      "specials": [
+        {
+          "title": "FREE PARKING WITH 1 YEAR LEASE!", 
+          "message": "** LUXURY SPA INCLUDES SAUNA & STEAM ROOM / STATE OF ART FITNESS CENTER ** OTHER GRAND LOCATIONS AVAILABLE PLEASE CALL FOR AVAILABILITY."
+        }
+      ],
+      "images": [
+        "https://images1.apartments.com/i2/W8xaPn-PPhSFpfgG2QvTDOnFEltnNPTW6Mw-f_GNw_Y/112/the-grand-at-penn-elizabeth-nj-building-photo.jpg?p=1",
+        "https://images1.apartments.com/i2/zQiwlI-E9neqWqreg7bkB0NQvs3z0Rzzb48ADu_iKno/112/the-grand-at-penn-elizabeth-nj-building-photo.jpg?p=1",
+        "https://images1.apartments.com/i2/y92EzJUDonpP5stSxLQrFLx6Lvvm00sjRW1-2NqWDME/112/the-grand-at-penn-elizabeth-nj-front-of-building-entrance.jpg?p=1",
+        "https://images1.apartments.com/i2/pcr3gAFUWLKjhHJsq9uUiIjBL5CPH-OIbuiM3incF_E/112/the-grand-at-penn-elizabeth-nj-side-entrance.jpg?p=1",
+        "https://images1.apartments.com/i2/yjbaqOeSb9Jy-80SCVFvkplFqRyMKK5yMhm87TbLpwU/112/the-grand-at-penn-elizabeth-nj-side-of-building.jpg?p=1",
+        "https://images1.apartments.com/i2/xC48j7fhZ7qQvl5fUxg98H-SSUalrz-iGSrOBAaWyyw/112/the-grand-at-penn-elizabeth-nj-main-lobby.jpg?p=1",
+        "https://images1.apartments.com/i2/RpWo_25buin7tQWR3a6jAo0M6cjbsUJCSJxrxnjwO94/112/the-grand-at-penn-elizabeth-nj-second-lobby.jpg?p=1",
+        "https://images1.apartments.com/i2/2K24TpsVpVc-WCDQNvtMjY0U-bz3LTtbBrQOoEwV7Kg/112/the-grand-at-penn-elizabeth-nj-fitness-center.jpg?p=1",
+        "https://images1.apartments.com/i2/sct-_cV02FsFJhqb3Ofbmkd3UQh_4ty8WsGCzZ6bmtQ/112/the-grand-at-penn-elizabeth-nj-fitness-center---sauna.jpg?p=1",
+        "https://images1.apartments.com/i2/He5BjEHOtrXrVAwN4PRoVnoTfHDawaGYliNsvjwhbr8/112/the-grand-at-penn-elizabeth-nj-game-room.jpg?p=1",
+        "https://images1.apartments.com/i2/Z8srIrvRmVtuju5fJ32Yl24jmetXFUd9k-4IUOeHDzs/112/the-grand-at-penn-elizabeth-nj-hallway.jpg?p=1"
+      ],
+      "videos": [
+        "https://www.apartments.com/775c0df1-aacd-4d3f-8c93-098e428c04f6"
+      ],
+      "unique_features": [
+        "5 Minutes From Newark Airport",
+        "Luxury Spa & Fitness Center",
+        "Open Floor Plans",
+        "Brand New Construction",
+        "Close To All Major Highways",
+        "Near Jersey Gardens Mall"
+      ],
+      "community_amenities": [
+        "Fitness Center",
+        "Elevator",
+        "Clubhouse",
+        "Roof Terrace",
+        "Recycling",
+        "Business Center",
+        "Grill"
+      ],
+      "property_services": [
+        "Package Service",
+        "Maintenance on site",
+        "Property Manager on Site",
+        "24 Hour Access",
+        "Recycling",
+        "Renters Insurance Program",
+        "EV Charging",
+        "Public Transportation",
+        "Key Fob Entry"
+      ],
+      "outdoor_features": [
+        "Gated",
+        "Fenced Lot",
+        "Roof Terrace",
+        "Sundeck",
+        "Cabana",
+        "Courtyard",
+        "Grill",
+        "Dog Park"
+      ],
+      "apartment_features": [
+        "Washer/Dryer",
+        "Air Conditioning",
+        "Dishwasher",
+        "High Speed Internet Access",
+        "Walk-In Closets",
+        "Island Kitchen",
+        "Granite Countertops",
+        "Microwave"
+      ],
+      "apartments": [
+        {
+          "apartment_number": "12A",
+          "bedrooms": 1,
+          "bathrooms": 1,
+          "square_footage": 946,
+          "price_range": "$2,295/month",
+          "availability": true,
+          "highlights": [
+            "High Speed Internet Access",
+            "Wi-Fi",
+            "Washer/Dryer",
+            "Air Conditioning",
+            "Heating",
+            "Cable Ready",
+            "Security System",
+            "Storage Space",
+            "Double Vanities",
+            "Tub/Shower",
+            "Handrails",
+            "Intercom",
+            "Sprinkler System",
+            "Framed Mirrors",
+            "Wheelchair Accessible (Rooms)"
+          ],
+          "kitchen_features": [
+            "Dishwasher",
+            "Ice Maker",
+            "Granite Countertops",
+            "Stainless Steel Appliances",
+            "Pantry",
+            "Island Kitchen",
+            "Eat-in Kitchen",
+            "Microwave",
+            "Oven",
+            "Range",
+            "Refrigerator",
+            "Freezer",
+            "Breakfast Nook"
+          ],
+          "floor_plan_details": [
+            "Balcony",
+            "Patio",
+            "Vinyl Flooring",
+            "Dining Room",
+            "High Ceilings",
+            "Den",
+            "Walk-In Closets",
+            "Linen Closet",
+            "Large Bedrooms"
+          ],
+          "images": [
+            "https://images1.apartments.com/i2/hlT4RJXjRCJhsw8AtMc5n8NdSWHjxtSQ5lWJ_KyPjpU/112/the-grand-at-penn-elizabeth-nj-2br-2ba---1423sf--kitchen.jpg?p=1",
+            "https://images1.apartments.com/i2/-nTyVhvjJVkdDXUAYLAC-qHWzeF2q5_djwatYOKVt5Y/112/the-grand-at-penn-elizabeth-nj-3br-2ba-wbalcony.jpg?p=1",
+            "https://images1.apartments.com/i2/FLqnwAn5wKeD8zZiEJkuw2iqNKX8_J0n_mYP7dI0EoI/112/the-grand-at-penn-elizabeth-nj-2br-2ba---1423sf---living-area.jpg?p=1",
+            "https://images1.apartments.com/i2/dYm_K7fIXRcdrQDqyEDbTK-3FQuGRHtGC_9-DLI4Rok/112/the-grand-at-penn-elizabeth-nj-2br-2ba---1423sf---bedroom.jpg?p=1",
+            "https://images1.apartments.com/i2/MJtOrzHiOD4ORxzEvhBcNcStogAR93CNk-fgEha6eco/112/the-grand-at-penn-elizabeth-nj-2br-2ba---1423sf---bathroom.jpg?p=1",
+            "https://images1.apartments.com/i2/X9p1yJrOofwh48xpckxPk1fF9XvEa4a5k66YJuy0jHg/112/the-grand-at-penn-elizabeth-nj-3br-2ba-wbalcony---bathroom.jpg?p=1"
+          ],
+          "floor_plan_url": "https://allorawallaceparkapartments.com/wp-content/uploads/2022/07/Allora-Wallace-Park-One-Bedroom-Floor-Plan-A1S-scaled.jpg"
+        },
+        {
+          "apartment_number": "15C",
+          "bedrooms": 2,
+          "bathrooms": 2,
+          "square_footage": 1800,
+          "price_range": "$2,900 - $3,000/month",
+          "availability": true,
+          "highlights": [
+            "High Speed Internet Access",
+            "Wi-Fi",
+            "Air Conditioning",
+            "Security System",
+            "Walk-In Closets",
+            "Tub/Shower",
+            "Framed Mirrors",
+            "Wheelchair Accessible"
+          ],
+          "kitchen_features": [
+            "Dishwasher",
+            "Ice Maker",
+            "Granite Countertops",
+            "Stainless Steel Appliances",
+            "Pantry",
+            "Microwave",
+            "Refrigerator",
+            "Freezer"
+          ],
+          "floor_plan_details": [
+            "Walk-In Closets",
+            "Balcony",
+            "High Ceilings",
+            "Linen Closet",
+            "Large Bedrooms",
+            "Dining Room",
+            "Patio"
+          ],
+          "images": [
+            "https://images1.apartments.com/i2/CzLKqe31ghTCHZXGe9FxYYIdvhAZhVJvboZrM_XedcI/112/the-grand-at-penn-elizabeth-nj-2br-2ba---1423sf---living-area.jpg?p=1",
+            "https://images1.apartments.com/i2/xPv6PH7_PJ0HTq2VAzrC6rQR2xTQV2zG6SqoHAtHwXc/112/the-grand-at-penn-elizabeth-nj-2br-2ba---1423sf---bedroom.jpg?p=1",
+            "https://images1.apartments.com/i2/FR7pdNZ1irwa5zh4Fp10AXHag78UGthVjbUbqHSfyMc/112/the-grand-at-penn-elizabeth-nj-2br-2ba---1423sf---bathroom.jpg?p=1",
+            "https://images1.apartments.com/i2/ukkMmgIDWNHPNHFpIaiBAlWunyiAwVU3ifLx1PuKRYc/112/the-grand-at-penn-elizabeth-nj-2br-2ba---1351sf---kitchen.jpg?p=1",
+            "https://images1.apartments.com/i2/5F4IFMHV8Cnd3aLOPIrkpyuB5ifqKAMUvPotUqRxz3I/112/the-grand-at-penn-elizabeth-nj-2br-2ba---1351sf---kitchen.jpg?p=1"
+          ],
+          "floor_plan_url": "https://allorawallaceparkapartments.com/wp-content/uploads/2022/07/Allora-Wallace-Park-One-Bedroom-Floor-Plan-A1S-scaled.jpg"
+        }
+      ]
+    },
+    {
+      "name": "The Grand at Westfield",
+      "address": "618 Westfield Ave, Elizabeth, NJ 07208",
+      "description": "Experience Elizabeth living at The Grand at Westfield. Located at 618 Westfield Ave in Elizabeth, this community is a terrific place to live. The professional leasing team will assist you in finding your perfect home. Contact us today to learn more about our community and see The Grand at Westfield.",
+      "floors": 3,
+      "specials": [
+        {
+          "title": "FREE PARKING WITH 1 YEAR LEASE!", 
+          "message": "** LUXURY SPA INCLUDES SAUNA & STEAM ROOM / STATE OF ART FITNESS CENTER ** OTHER GRAND LOCATIONS AVAILABLE PLEASE CALL FOR AVAILABILITY."
+        }
+      ],
+      "images": [
+        "https://images1.apartments.com/i2/SakfC_3IiCNocB9v88XguRB9tYPxjiXj0Xrj3n3KAKo/111/the-grand-at-westfield-elizabeth-nj-primary-photo.jpg?p=1"
+      ],
+      "videos": [],
+      "unique_features": [
+        "Prime Location Near Downtown",
+        "Gated Community",
+        "24-Hour Concierge",
+        "Private Resident Events",
+        "Nearby Parks and Recreation",
+        "Top-Rated Schools"
+      ],
+      "community_amenities": [
+        "Private Courtyard",
+        "Resident Lounge",
+        "On-site Parking",
+        "Package Lockers",
+        "EV Charging Stations"
+      ],
+      "property_services": [
+        "On-site Management",
+        "24/7 Security",
+        "Package Delivery",
+        "Fitness Classes",
+        "Pet-Friendly Policy"
+      ],
+      "outdoor_features": [
+        "Private Garden",
+        "Rooftop Lounge",
+        "Walking Paths",
+        "Dog Park",
+        "BBQ Area"
+      ],
+      "apartment_features": [
+        "Stainless Steel Appliances",
+        "High Ceilings",
+        "Hardwood Floors",
+        "Quartz Countertops",
+        "Walk-in Closets"
+      ],
+      "apartments": [
+        {
+          "apartment_number": "8B",
+          "bedrooms": 1,
+          "bathrooms": 1,
+          "square_footage": 900,
+          "price_range": "$3,000 - $3,500/month",
+          "availability": true,
+          "highlights": [
+            "Washer/Dryer",
+            "High Speed Internet Access",
+            "Dishwasher",
+            "Cable Ready",
+            "Air Conditioning"
+          ],
+          "kitchen_features": [
+            "Granite Countertops",
+            "Microwave",
+            "Refrigerator",
+            "Freezer",
+            "Ice Maker"
+          ],
+          "floor_plan_details": [
+            "Balcony",
+            "Vinyl Flooring",
+            "Dining Room",
+            "Walk-In Closets",
+            "Large Bedrooms"
+          ],
+          "images": [
+            "https://images1.apartments.com/i2/CzLKqe31ghTCHZXGe9FxYYIdvhAZhVJvboZrM_XedcI/112/the-grand-at-penn-elizabeth-nj-2br-2ba---1423sf---living-area.jpg?p=1",
+            "https://images1.apartments.com/i2/xPv6PH7_PJ0HTq2VAzrC6rQR2xTQV2zG6SqoHAtHwXc/112/the-grand-at-penn-elizabeth-nj-2br-2ba---1423sf---bedroom.jpg?p=1",
+            "https://images1.apartments.com/i2/FR7pdNZ1irwa5zh4Fp10AXHag78UGthVjbUbqHSfyMc/112/the-grand-at-penn-elizabeth-nj-2br-2ba---1423sf---bathroom.jpg?p=1",
+            "https://images1.apartments.com/i2/ukkMmgIDWNHPNHFpIaiBAlWunyiAwVU3ifLx1PuKRYc/112/the-grand-at-penn-elizabeth-nj-2br-2ba---1351sf---kitchen.jpg?p=1",
+            "https://images1.apartments.com/i2/5F4IFMHV8Cnd3aLOPIrkpyuB5ifqKAMUvPotUqRxz3I/112/the-grand-at-penn-elizabeth-nj-2br-2ba---1351sf---kitchen.jpg?p=1"
+          ],
+          "floor_plan_url": "https://allorawallaceparkapartments.com/wp-content/uploads/2022/07/Allora-Wallace-Park-One-Bedroom-Floor-Plan-A1S-scaled.jpg"
+        },
+        {
+          "apartment_number": "10D",
+          "bedrooms": 2,
+          "bathrooms": 2,
+          "square_footage": 1400,
+          "price_range": "$4,800 - $5,300/month",
+          "availability": true,
+          "highlights": [
+            "Wi-Fi",
+            "Walk-In Closets",
+            "Granite Countertops",
+            "Microwave",
+            "Washer/Dryer"
+          ],
+          "kitchen_features": [
+            "Stainless Steel Appliances",
+            "Ice Maker",
+            "Dishwasher",
+            "Oven",
+            "Refrigerator"
+          ],
+          "floor_plan_details": [
+            "Patio",
+            "Dining Room",
+            "High Ceilings",
+            "Linen Closet",
+            "Large Bedrooms"
+          ],
+          "images": [
+            "https://images1.apartments.com/i2/CzLKqe31ghTCHZXGe9FxYYIdvhAZhVJvboZrM_XedcI/112/the-grand-at-penn-elizabeth-nj-2br-2ba---1423sf---living-area.jpg?p=1",
+            "https://images1.apartments.com/i2/xPv6PH7_PJ0HTq2VAzrC6rQR2xTQV2zG6SqoHAtHwXc/112/the-grand-at-penn-elizabeth-nj-2br-2ba---1423sf---bedroom.jpg?p=1",
+            "https://images1.apartments.com/i2/FR7pdNZ1irwa5zh4Fp10AXHag78UGthVjbUbqHSfyMc/112/the-grand-at-penn-elizabeth-nj-2br-2ba---1423sf---bathroom.jpg?p=1",
+            "https://images1.apartments.com/i2/ukkMmgIDWNHPNHFpIaiBAlWunyiAwVU3ifLx1PuKRYc/112/the-grand-at-penn-elizabeth-nj-2br-2ba---1351sf---kitchen.jpg?p=1",
+            "https://images1.apartments.com/i2/5F4IFMHV8Cnd3aLOPIrkpyuB5ifqKAMUvPotUqRxz3I/112/the-grand-at-penn-elizabeth-nj-2br-2ba---1351sf---kitchen.jpg?p=1"
+          ],
+          "floor_plan_url": "https://allorawallaceparkapartments.com/wp-content/uploads/2022/07/Allora-Wallace-Park-One-Bedroom-Floor-Plan-A1S-scaled.jpg"
+        }
+      ]
+    },
+    {
+      "name": "The Grand at Morris",
+      "address": "540 Morris Ave, Elizabeth, NJ 07208",
+      "description": "An elegant blend of nature and luxury, offering spacious units with panoramic park views.",
+      "floors": 3,
+      "specials": [
+        {
+          "title": "BRAND NEW LUXURY APARTMENTS!!",
+          "message": "PRE CONSTRUCTION PRICING LUXURY FIVE STAR APARTMENT BUILDING ACROSS THE STREET FROM MORRIS AVE PARK & KEAN UNIVERSITY ROUTE 1&9,TURNPIKE AND NEWARK AIRPORT LESS THEN A MILE AWAY SECURED PARKING GARAGE/ PRIVATE BALCONIES OVERSIZED LUXURY APARTMENTS CALL BUILDER DIRECT AND SAVE"
+        }
+      ],
+      "images": [
+        "https://images1.forrent.com/i2/JcJbrcFOJXEFnykBeD4cLAuFyM9tBCVC2GBbWu6-UHY/112/image.jpg?p=1",
+        "https://images1.forrent.com/i2/jYqijGXixMwvtXadGNZ8cca6WD2rp319k8OEEkxj1u8/112/image.jpg?p=1"
+      ],
+      "videos": [],
+      "unique_features": [
+        "Located Next to Central Park",
+        "Pet-Friendly with Dog Run",
+        "Exclusive Residents-Only Club",
+        "Heated Outdoor Pool",
+        "Close to Gourmet Restaurants"
+      ],
+      "community_amenities": [
+        "Fitness Center",
+        "Outdoor Pool",
+        "Clubhouse",
+        "Sauna",
+        "24/7 Concierge",
+        "Yoga Studio"
+      ],
+      "property_services": [
+        "On-Site Security",
+        "Valet Parking",
+        "Package Service",
+        "Laundry Facilities",
+        "Bike Storage"
+      ],
+      "outdoor_features": [
+        "Private Terrace",
+        "Lush Gardens",
+        "Walking Trails",
+        "BBQ Grills"
+      ],
+      "apartment_features": [
+        "High Ceilings",
+        "Hardwood Floors",
+        "Walk-in Closets",
+        "Stainless Steel Appliances"
+      ],
+      "apartments": [
+        {
+          "apartment_number": "5A",
+          "bedrooms": 2,
+          "bathrooms": 2,
+          "square_footage": 1350,
+          "price_range": "$4,000 - $4,500/month",
+          "availability": true,
+          "highlights": [
+            "Wi-Fi",
+            "Washer/Dryer",
+            "Air Conditioning",
+            "Granite Countertops",
+            "Dishwasher"
+          ],
+          "kitchen_features": [
+            "Ice Maker",
+            "Stainless Steel Appliances",
+            "Refrigerator",
+            "Freezer",
+            "Oven"
+          ],
+          "floor_plan_details": [
+            "Walk-In Closets",
+            "Private Balcony",
+            "High Ceilings",
+            "Dining Room",
+            "Linen Closet"
+          ],
+          "images": [
+            "https://images1.apartments.com/i2/CzLKqe31ghTCHZXGe9FxYYIdvhAZhVJvboZrM_XedcI/112/the-grand-at-penn-elizabeth-nj-2br-2ba---1423sf---living-area.jpg?p=1",
+            "https://images1.apartments.com/i2/xPv6PH7_PJ0HTq2VAzrC6rQR2xTQV2zG6SqoHAtHwXc/112/the-grand-at-penn-elizabeth-nj-2br-2ba---1423sf---bedroom.jpg?p=1",
+            "https://images1.apartments.com/i2/FR7pdNZ1irwa5zh4Fp10AXHag78UGthVjbUbqHSfyMc/112/the-grand-at-penn-elizabeth-nj-2br-2ba---1423sf---bathroom.jpg?p=1",
+            "https://images1.apartments.com/i2/ukkMmgIDWNHPNHFpIaiBAlWunyiAwVU3ifLx1PuKRYc/112/the-grand-at-penn-elizabeth-nj-2br-2ba---1351sf---kitchen.jpg?p=1",
+            "https://images1.apartments.com/i2/5F4IFMHV8Cnd3aLOPIrkpyuB5ifqKAMUvPotUqRxz3I/112/the-grand-at-penn-elizabeth-nj-2br-2ba---1351sf---kitchen.jpg?p=1"
+          ],
+          "floor_plan_url": "https://allorawallaceparkapartments.com/wp-content/uploads/2022/07/Allora-Wallace-Park-One-Bedroom-Floor-Plan-A1S-scaled.jpg"
+        }
+      ]
+    }
+  ]
+}
