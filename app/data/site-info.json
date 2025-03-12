@@ -7,11 +7,20 @@
       "phone": "(555) 123-4567",
       "address": "123 Main Street, Metropolis, NY 10001"
     },
-    "social_links": {
-      "instagram": "https://instagram.com/thegrandliving",
-      "facebook": "https://facebook.com/thegrandliving",
-      "twitter": "https://twitter.com/thegrandliving"
-    },
+    "social_links": [
+      {
+        "name": "instagram",
+        "link": "https://instagram.com/thegrandliving"
+      },
+      {
+        "name": "facebook",
+        "link": "https://facebook.com/thegrandliving"
+      },
+      {
+        "name": "twitter",
+        "link": "https://twitter.com/thegrandliving"
+      }
+    ],
     "office_hours": {
       "monday_to_friday": "9:00 AM - 6:00 PM",
       "saturday": "10:00 AM - 4:00 PM",
@@ -20,6 +29,7 @@
   },
   "buildings": [
     {
+      "id": 1,
       "name": "The Grand at Penn",
       "address": "705 Newark Ave, Elizabeth, NJ 07208",
       "description": "Luxurious apartments",
@@ -203,6 +213,7 @@
       ]
     },
     {
+      "id": 2,
       "name": "The Grand at Westfield",
       "address": "618 Westfield Ave, Elizabeth, NJ 07208",
       "description": "Experience Elizabeth living at The Grand at Westfield. Located at 618 Westfield Ave in Elizabeth, this community is a terrific place to live. The professional leasing team will assist you in finding your perfect home. Contact us today to learn more about our community and see The Grand at Westfield.",
@@ -331,6 +342,7 @@
       ]
     },
     {
+      "id": 3,
       "name": "The Grand at Morris",
       "address": "540 Morris Ave, Elizabeth, NJ 07208",
       "description": "An elegant blend of nature and luxury, offering spacious units with panoramic park views.",
