@@ -15,7 +15,7 @@ const NavBar: React.FC<NavBarProps> = ({ toggle }) => {
         <div className="container mx-auto px-4 h-full max-w-screen-2xl">
           <div className="flex justify-between items-center h-full">
             <div className="text-black">
-              <h1 className="text-xl font-semibold">The Grand</h1>
+              <h1 className="text-xl font-extrabold">The Grand</h1>
             </div>
             {/* Desktop Navigation */}
             <ul className="hidden md:flex gap-x-6 text-black">

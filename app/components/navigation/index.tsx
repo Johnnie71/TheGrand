@@ -11,10 +11,10 @@ const Navigation = () => {
   }
 
   return (
-    <>
+    <div className='z-50'>
       <NavBar toggle={toggle} />
       <SideBar isOpen={isOpen} toggle={toggle} />
-    </>
+    </div>
   );
 };
 

@@ -22,7 +22,7 @@ export default function RootLayout({
   
   return (
     <html lang="en">
-      <body className={`${inter.className} min-h-screen`}>
+      <body className={`${inter.className} min-h-screen antialiased`}>
         <Navigation />
         <div className="max-w-screen-2xl mx-auto">
           {children}
