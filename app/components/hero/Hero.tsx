@@ -51,11 +51,11 @@ const Hero: React.FC<Props> = ({ image }) => {
         </div>
       </div>
 
-      {/* Arrow */}
-      <div className='absolute w-full bottom-0 flex justify-center items-center transform -translate-x-1/2 z-50 animate-bounce'>
-        <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 24 24" className="stroke-white -rotate-90">
-          <path strokeLinejoin="round" stroke-linecap="round" stroke-width="1.5" d="M11 6L5 12M5 12L11 18M5 12H19"></path>
-        </svg>
+      {/* Scroll Indicator */}
+      <div className="absolute w-full bottom-6 flex justify-center items-center transform -translate-x-1/2 z-50 animate-bounce">
+        <div className="w-8 h-12 rounded-full border-2 border-white flex items-start justify-center">
+          <div className="w-1 h-3 bg-white rounded-full mt-2 animate-[bounce_1.5s_infinite]"></div>
+        </div>
       </div>
     </section>
   )
