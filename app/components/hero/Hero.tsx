@@ -44,7 +44,7 @@ const Hero: React.FC<Props> = ({ image }) => {
       </div>
 
       {/* Arrow */}
-      <div className='absolute bottom-8 left-1/2 transform -translate-x-1/2 z-50 animate-bounce'>
+      <div className='absolute w-full bottom-0 flex justify-center items-center transform -translate-x-1/2 z-50 animate-bounce'>
         <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 24 24" className="stroke-white -rotate-90">
           <path strokeLinejoin="round" stroke-linecap="round" stroke-width="1.5" d="M11 6L5 12M5 12L11 18M5 12H19"></path>
         </svg>
