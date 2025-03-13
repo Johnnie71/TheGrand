@@ -1,8 +1,13 @@
+import Hero from "./components/hero/Hero"
+import { getHomeScreenData } from "./lib/helpers"
+
 const Home = () => {
+  const data = getHomeScreenData()
+
   return (
-    <section className="py-24">
-      <div className="container">
-        <h1 className="txt-2xl font-bold">Next TS Starter</h1>
+    <section>
+      <div className="max-w-screen-2xl mx-auto">
+        <Hero image={data} />
       </div>
     </section>
   

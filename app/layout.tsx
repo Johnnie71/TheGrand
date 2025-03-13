@@ -22,9 +22,11 @@ export default function RootLayout({
   
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.className} min-h-screen`}>
         <Navigation />
-        {children}
+        <div className="max-w-screen-2xl mx-auto">
+          {children}
+        </div>
         <Footer footerData={footerData} />
       </body>
     </html>

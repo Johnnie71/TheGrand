@@ -25,8 +25,8 @@ const Footer: React.FC<Props> = ({ footerData }) => {
   const { properties, socials } = footerData;
 
   return (
-    <footer className='bg-[#111827] text-white py-8'>
-      <div className='container mx-auto px-4 md:px-16 sm:px-10 '>
+    <footer className='bg-[#111827] text-white py-8 max-w-screen-2xl mx-auto'>
+      <div className='container mx-auto px-4 md:px-16 sm:px-10 max-w-screen-xl'>
         <div className="pd-2 md:pb-10 flex flex-col md:flex-row justify-between items-start border-b-2 border-gray-700">
           {/*Grand Section */}
           <div className='mb-6 md:mb-0'>

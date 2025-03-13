@@ -11,8 +11,8 @@ const NavBar: React.FC<NavBarProps> = ({ toggle }) => {
 
   return (
     <>
-      <div className="w-full h-14 border-2 border-red-500 bg-white opacity-80 sticky">
-        <div className="container mx-auto px-4 h-full">
+      <nav className="w-full h-14 bg-white backdrop-blur-md opacity-80 fixed top-0 left-0 right-0 z-50">
+        <div className="container mx-auto px-4 h-full max-w-screen-2xl">
           <div className="flex justify-between items-center h-full">
             <div className="text-black">
               <h1 className="text-xl font-semibold">The Grand</h1>
@@ -55,7 +55,7 @@ const NavBar: React.FC<NavBarProps> = ({ toggle }) => {
             </div>
           </div>
         </div>
-      </div>
+      </nav>
     </>
   );
 };
