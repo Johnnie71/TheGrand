@@ -44,7 +44,16 @@ export function fetchFooterData() {
 export function getHomeScreenData() {
   const data = getData();
   
-  const heroImage = data['buildings'][0]['images'][0]
+  const buildings = data['buildings']
+  const heroImage = buildings[0]['images'][0]
+
+  const featured = buildings.splice(0, 3).map((building) => (
+    {
+      'id': building.id, 
+      'name': building.name,
+      'address': building.address ?? 'Unknown Address',
+      'url': building.images[0]
+    }))
 
   return heroImage
 }

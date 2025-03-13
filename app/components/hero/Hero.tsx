@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import { ArrowRight } from 'lucide-react';
 
 interface Props {
   image: string;
@@ -7,18 +8,11 @@ interface Props {
 
 const Hero: React.FC<Props> = ({ image }) => {
 
-  const scrollToSection = (sectionID: string) => {
-    const element = document.querySelector(sectionID);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' })
-    }
-  }
-
   return (
     <section id="hero" className="relative w-full h-screen flex items-center max-w-full">
       {/* Background Image Container with Filter */}
       <div 
-        className="absolute top-0 left-0 w-full h-full bg-cover bg-center"
+        className="absolute top-0 left-0 w-full h-full bg-cover bg-center inset-0 z-0"
         style={{
           backgroundImage: `url(${image})`,
           filter: 'brightness(50%)', // Apply the filter only to the background
@@ -26,19 +20,33 @@ const Hero: React.FC<Props> = ({ image }) => {
       ></div>
 
       {/* Content (Text) */}
-      <div className="relative text-white md:text-left md:pl-20 md:w-6/12 flex flex-col gap-6 text-center">
+      <div className="relative text-white md:text-left md:pl-20 md:w-6/12 flex flex-col text-center">
         <div className='w-full'>
-          <h1 className="text-5xl md:text-7xl font-bold">Luxury Living,</h1>
-          <h1 className="text-5xl md:text-7xl font-bold">Elevated</h1>
+          <span className="inline-block py-1 px-3 rounded-sm bg-gold-dark text-white text-xs uppercase tracking-wider font-medium mb-4">
+              Luxury Living Redefined
+            </span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+              Experience Unparalleled Elegance in Every Detail
+            </h1>
         </div>
-        <div className="w-full px-4 !sm:px-4 md:px-0">
-          <p className="text-xl sm:text-2xl">
-            Experience unparalleled sophistication in our premium residential properties
+        <div className="w-full mb-8">
+          <p className="text-lg text-white/90 leading-relaxed max-w-xl">
+            The Grand offers exceptional residential properties that blend luxury, comfort, and sophisticated design.
           </p>
         </div>
-        <div className='sm:w-full md:w-fit flex justify-center'>
-          <Link href="/properties">
-            <button className='bg-white px-2 py-4 text-black w-fit font-semibold border-2 border-black'>Explore our buildings</button>
+        <div className='w-full flex flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-2'>
+          <Link 
+              href="/properties" 
+              className="btn-gold shadow-lg flex items-center gap-2 group"
+            >
+              Explore Properties
+              <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+          </Link>
+          <Link 
+              href="/contact" 
+              className="btn-secondary border-white text-white hover:bg-white hover:text-luxury-black"
+            >
+              Schedule a Tour
           </Link>
         </div>
       </div>
