@@ -14,11 +14,11 @@ const NavBar: React.FC<NavBarProps> = ({ toggle }) => {
       <nav className="w-full h-14 bg-white backdrop-blur-md opacity-80 fixed top-0 left-0 right-0 z-50">
         <div className="container mx-auto px-4 h-full max-w-screen-2xl">
           <div className="flex justify-between items-center h-full">
-            <div className="text-black">
+            <div className="text-black md:ml-20">
               <h1 className="text-xl font-extrabold">The Grand</h1>
             </div>
             {/* Desktop Navigation */}
-            <ul className="hidden md:flex gap-x-6 text-black">
+            <ul className="hidden md:flex gap-x-6 text-black mr-20">
               <li>
                 <Link href="/">
                   <p className={`hover:underline hover:text-opacity-10 hover:font-semibold transition-all duration-300 ease-in-out  ${pathName == "/" ? 'font-semibold underline': ""}`}>Home</p>
