@@ -1,3 +1,4 @@
+import AboutSection from "./components/aboutSection/AboutSection";
 import FeaturedProperties from "./components/featured/FeaturedProperties"
 import Hero from "./components/hero/Hero"
 import { getFeaturedProperties } from "./data/properties";
@@ -8,12 +9,13 @@ const Home = () => {
   const featured = getFeaturedProperties();
 
   return (
-    <section>
+    <div className="animate-fade-in">
       <div className="max-w-screen-2xl mx-auto">
         <Hero info={info} />
         <FeaturedProperties featured={featured}/>
+        <AboutSection />
       </div>
-    </section>
+    </div>
   
   )
 }
