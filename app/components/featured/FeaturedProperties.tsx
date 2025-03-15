@@ -15,7 +15,7 @@ const FeaturedProperties: React.FC<Props> = ({ featured }) => {
   return (
     <section className="py-20 bg-white">
       <div className="container-custom">
-        <AnimatedSection className="text-center mb-16 max-w-3xl mx-auto">
+        <AnimatedSection className="text-center mb-16 max-w-2xl mx-auto">
           <span className="inline-block py-1 px-3 rounded-sm bg-luxury-cream text-luxury-black text-xs uppercase tracking-wider font-medium mb-4">
             Featured Properties
           </span>
