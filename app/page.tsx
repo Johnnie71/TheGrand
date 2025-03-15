@@ -1,4 +1,5 @@
 import AboutSection from "./components/aboutSection/AboutSection";
+import ExperienceUsSection from "./components/experienceUs/ExperienceUsSection";
 import FeaturedProperties from "./components/featured/FeaturedProperties"
 import Hero from "./components/hero/Hero"
 import WhyUsSection from "./components/whyUsSection/WhyUsSection";
@@ -16,6 +17,7 @@ const Home = () => {
         <FeaturedProperties featured={featured}/>
         <AboutSection />
         <WhyUsSection />
+        <ExperienceUsSection />
       </div>
     </div>
   )
