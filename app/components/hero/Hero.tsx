@@ -13,19 +13,19 @@ const Hero: React.FC<Props> = ({ info }) => {
   const { mainImage, welcomeMessage, welcomeDescription } = info;
 
   return (
-    <section id="hero" className="relative w-full h-screen flex items-center max-w-full">
+    <section id="hero" className="relative min-h-screen flex items-center py-20 overflow-hidden">
       {/* Background Image Container with Filter */}
-      <div 
-        className="absolute top-0 left-0 w-full h-full bg-cover bg-center inset-0 z-0"
-        style={{
-          backgroundImage: `url(${mainImage})`,
-          filter: 'brightness(50%)', // Apply the filter only to the background
-        }}
-      ></div>
+      <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
+        <img
+          src={mainImage}
+          className="absolute inset-0 w-full h-full object-cover object-center z-0"
+        />
+      </div>
 
       {/* Content (Text) */}
-      <div className="relative text-white md:text-left md:pl-20 md:w-6/12 flex flex-col text-center">
-        <div className='w-full'>
+      <div className="container-custom relative z-20 mt-16">
+        <div className='max-w-3xl'>
           <AnimatedSection
             animation="fade-in"
             delay={300}
