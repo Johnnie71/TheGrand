@@ -1,7 +1,9 @@
+'use client'
 import React from 'react';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import { Info } from '@/app/data/siteInfo';
+import AnimatedSection from '../animatedSection/AnimatedSection';
 
 interface Props {
   info: Info;
@@ -24,20 +26,41 @@ const Hero: React.FC<Props> = ({ info }) => {
       {/* Content (Text) */}
       <div className="relative text-white md:text-left md:pl-20 md:w-6/12 flex flex-col text-center">
         <div className='w-full'>
-          <span className="inline-block py-1 px-3 rounded-sm bg-gold-dark text-white text-xs uppercase tracking-wider font-medium mb-4">
+          <AnimatedSection
+            animation="fade-in"
+            delay={300}
+            className="mb-4"
+          >
+            <span className="inline-block py-1 px-3 rounded-sm bg-gold-dark text-white text-xs uppercase tracking-wider font-medium mb-4">
               Luxury Living Redefined
             </span>
+          </AnimatedSection>
+
+          <AnimatedSection
+            animation="fade-in"
+            delay={500}
+            className="mb-6"
+          >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
               {welcomeMessage}
             </h1>
+          </AnimatedSection>
         </div>
-        <div className="w-full mb-8">
+        <AnimatedSection
+          animation="fade-in"
+          delay={700}
+          className="mb-8"
+        >
           <p className="text-lg text-white/90 leading-relaxed max-w-xl">
             {welcomeDescription}
           </p>
-        </div>
-        <div className='w-full flex flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-2'>
-          <Link 
+        </AnimatedSection>
+        <AnimatedSection
+            animation="fade-in"
+            delay={900}
+            className="w-full flex flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-2"
+          >
+            <Link 
               href="/properties" 
               className="btn-gold shadow-lg flex items-center gap-2 group"
             >
@@ -50,7 +73,7 @@ const Hero: React.FC<Props> = ({ info }) => {
             >
               Schedule a Tour
           </Link>
-        </div>
+          </AnimatedSection>
       </div>
 
       {/* Scroll Indicator */}
