@@ -1,12 +1,14 @@
 import React from 'react';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
+import { Info } from '@/app/data/siteInfo';
 
 interface Props {
-  image: string;
+  info: Info;
 }
 
-const Hero: React.FC<Props> = ({ image }) => {
+const Hero: React.FC<Props> = ({ info }) => {
+  const { mainImage, welcomeMessage, welcomeDescription } = info;
 
   return (
     <section id="hero" className="relative w-full h-screen flex items-center max-w-full">
@@ -14,7 +16,7 @@ const Hero: React.FC<Props> = ({ image }) => {
       <div 
         className="absolute top-0 left-0 w-full h-full bg-cover bg-center inset-0 z-0"
         style={{
-          backgroundImage: `url(${image})`,
+          backgroundImage: `url(${mainImage})`,
           filter: 'brightness(50%)', // Apply the filter only to the background
         }}
       ></div>
@@ -26,12 +28,12 @@ const Hero: React.FC<Props> = ({ image }) => {
               Luxury Living Redefined
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-              Experience Unparalleled Elegance in Every Detail
+              {welcomeMessage}
             </h1>
         </div>
         <div className="w-full mb-8">
           <p className="text-lg text-white/90 leading-relaxed max-w-xl">
-            The Grand offers exceptional residential properties that blend luxury, comfort, and sophisticated design.
+            {welcomeDescription}
           </p>
         </div>
         <div className='w-full flex flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-2'>
