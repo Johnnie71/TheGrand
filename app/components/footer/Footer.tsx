@@ -1,6 +1,7 @@
 'use client'
 import React from 'react';
 import Link from 'next/link';
+import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Twitter } from 'lucide-react';
 
 interface Property {
   id: number;
@@ -25,81 +26,121 @@ const Footer: React.FC<Props> = ({ footerData }) => {
   const { properties, socials } = footerData;
 
   return (
-    <footer className='bg-[#111827] text-white py-8 max-w-screen-2xl mx-auto'>
-      <div className='container mx-auto px-4 md:px-16 sm:px-10 max-w-screen-xl'>
-        <div className="pd-2 md:pb-10 flex flex-col md:flex-row justify-between items-start border-b-2 border-gray-700">
-          {/*Grand Section */}
-          <div className='mb-6 md:mb-0'>
-            <h2 className='text-lg font-semibold mb-2'>The Grand</h2>
-            <p className='space-y-2 max-w-xs leading-relaxed opacity-70'>
-              Redifining luxury living through exceptional design and unparalled service
+    <footer className="bg-luxury-black text-white pt-16 pb-8">
+      <div className="container-custom">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+          {/* Brand Column */}
+          <div className="space-y-6">
+            <Link href="/" className="inline-block">
+              <h2 className="text-2xl font-serif font-bold">
+                <span>The</span>
+                <span className="ml-1 text-gold-light">Grand</span>
+              </h2>
+            </Link>
+            <p className="text-sm text-gray-300 leading-relaxed">
+              Redefining luxury living with exceptional properties and unmatched service. Experience the epitome of sophistication with The Grand.
             </p>
+            <div className="flex space-x-4">
+              <a href="#" className="text-gray-400 hover:text-gold-light transition-colors" aria-label="Facebook">
+                <Facebook className="h-5 w-5" />
+              </a>
+              <a href="#" className="text-gray-400 hover:text-gold-light transition-colors" aria-label="Instagram">
+                <Instagram className="h-5 w-5" />
+              </a>
+              <a href="#" className="text-gray-400 hover:text-gold-light transition-colors" aria-label="Twitter">
+                <Twitter className="h-5 w-5" />
+              </a>
+              <a href="#" className="text-gray-400 hover:text-gold-light transition-colors" aria-label="LinkedIn">
+                <Linkedin className="h-5 w-5" />
+              </a>
+            </div>
           </div>
 
-          {/*Properties */}
-          <div className='mb-6 md:mb-0'>
-            <h2 className='text-lg font-semibold mb-2'>Properties</h2>
-            <ul className='space-y-2'>
-            {properties && properties.map((property, idx) => {
-              const { name, id } = property;
-
-              return (
-                <li key={idx}>
-                  <Link href={`/properties/${id}`}>
-                    <p className="opacity-70 hover:opacity-100 transition-all duration-300 ease-in-out">{name}</p>
-                  </Link>
-                </li>
-              )
-            })}
-          </ul>
-          </div>
-
-          {/* Company */}
-          <div className='mb-6 md:mb-0'>
-            <h2 className='text-lg font-semibold mb-2'>Company</h2>
-            <ul className='space-y-2'>
+          {/* Quick Links */}
+          <div>
+            <h3 className="text-lg font-medium mb-6">Quick Links</h3>
+            <ul className="space-y-3">
               <li>
-                <Link href="/">
-                  <p className="opacity-70 hover:opacity-100 transition-all duration-300 ease-in-out">Home</p>
+                <Link href="/" className="text-gray-300 hover:text-gold-light transition-colors text-sm">
+                  Home
                 </Link>
               </li>
               <li>
-                <Link href="/properties">
-                  <p className="opacity-70 hover:opacity-100 transition-all duration-300 ease-in-out">Properties</p>
+                <Link href="/properties" className="text-gray-300 hover:text-gold-light transition-colors text-sm">
+                  Properties
                 </Link>
               </li>
               <li>
-                <Link href="/about">
-                  <p className="opacity-70 hover:opacity-100 transition-all duration-300 ease-in-out">About</p>
+                <Link href="/about" className="text-gray-300 hover:text-gold-light transition-colors text-sm">
+                  About Us
                 </Link>
               </li>
               <li>
-                <Link href="/contact">
-                  <p className="opacity-70 hover:opacity-100 transition-all duration-300 ease-in-out">Contact</p>
+                <Link href="/contact" className="text-gray-300 hover:text-gold-light transition-colors text-sm">
+                  Contact
                 </Link>
+              </li>
+              <li>
+                <a href="#" className="text-gray-300 hover:text-gold-light transition-colors text-sm">
+                  Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a href="#" className="text-gray-300 hover:text-gold-light transition-colors text-sm">
+                  Terms & Conditions
+                </a>
               </li>
             </ul>
           </div>
 
-          {/* Connect */}
-          <div className='mb-6 md:mb-0'>
-            <h2 className='text-lg font-semibold mb-2'>Connect</h2>
-            <ul className='space-y-2'>
-              {socials && socials.map((social, idx) => {
-                const { name, link } = social;
-                return (
-                  <li key={idx}>
-                    <Link href={link}>
-                      <p className="opacity-70 hover:opacity-100 transition-all duration-300 ease-in-out">{name}</p>
-                    </Link>
-                  </li>
-                )
-              })}
+          {/* Contact Info */}
+          <div>
+            <h3 className="text-lg font-medium mb-6">Contact Us</h3>
+            <ul className="space-y-4">
+              <li className="flex items-start">
+                <MapPin className="h-5 w-5 text-gold-light mt-0.5 mr-3 flex-shrink-0" />
+                <span className="text-sm text-gray-300">
+                  123 Luxury Avenue, Skyline District, New York, NY 10001
+                </span>
+              </li>
+              <li className="flex items-center">
+                <Phone className="h-5 w-5 text-gold-light mr-3 flex-shrink-0" />
+                <span className="text-sm text-gray-300">+1 (555) 123-4567</span>
+              </li>
+              <li className="flex items-center">
+                <Mail className="h-5 w-5 text-gold-light mr-3 flex-shrink-0" />
+                <a href="mailto:info@thegrand.com" className="text-sm text-gray-300 hover:text-gold-light transition-colors">
+                  info@thegrand.com
+                </a>
+              </li>
             </ul>
+          </div>
+
+          {/* Newsletter */}
+          <div>
+            <h3 className="text-lg font-medium mb-6">Newsletter</h3>
+            <p className="text-sm text-gray-300 mb-4">
+              Subscribe to our newsletter for the latest updates and offers.
+            </p>
+            <form className="space-y-3">
+              <input
+                type="email"
+                placeholder="Your email address"
+                className="w-full bg-luxury-gray text-white px-4 py-3 text-sm border border-gray-700 rounded-sm focus:outline-none focus:border-gold-light"
+                required
+              />
+              <button
+                type="submit"
+                className="w-full bg-gold-dark hover:bg-gold text-white py-3 text-sm rounded-sm transition-colors"
+              >
+                Subscribe
+              </button>
+            </form>
           </div>
         </div>
-        <div className='w-full flex justify-center items-center mt-8 opacity-70'>
-          <p>@ 2025 The Grand. All rights reserved.</p>
+
+        <div className="mt-12 pt-8 border-t border-luxury-gray text-center text-sm text-gray-400">
+          <p>© {new Date().getFullYear()} The Grand. All rights reserved.</p>
         </div>
       </div>
     </footer>
