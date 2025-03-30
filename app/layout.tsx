@@ -8,8 +8,8 @@ import { fetchFooterData } from "./lib/helpers";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "The Grand",
-  description: "Discover The Grand – luxurious residential buildings offering modern living spaces with stunning amenities. Explore available apartments and find your next home today.",
+  title: "The Brand",
+  description: "Discover The Brand – luxurious residential buildings offering modern living spaces with stunning amenities. Explore available apartments and find your next home today.",
 };
 
 const footerData = fetchFooterData()

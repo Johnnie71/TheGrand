@@ -25,7 +25,7 @@ const Hero: React.FC<Props> = ({ info }) => {
 
       {/* Content (Text) */}
       <div className="container-custom relative z-20 mt-16">
-        <div className='max-w-3xl'>
+        <div className='w-full md:max-w-3xl flex flex-col md:justify-start md:items-start justify-center items-center'>
           <AnimatedSection
             animation="fade-in"
             delay={300}
@@ -41,7 +41,7 @@ const Hero: React.FC<Props> = ({ info }) => {
             delay={500}
             className="mb-6"
           >
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 text-center md:text-left">
               {welcomeMessage}
             </h1>
           </AnimatedSection>
@@ -51,7 +51,7 @@ const Hero: React.FC<Props> = ({ info }) => {
           delay={700}
           className="mb-8"
         >
-          <p className="text-lg text-white/90 leading-relaxed max-w-xl">
+          <p className="text-lg text-white/90 leading-relaxed w-full md:max-w-xl text-center md:text-left">
             {welcomeDescription}
           </p>
         </AnimatedSection>
@@ -61,14 +61,14 @@ const Hero: React.FC<Props> = ({ info }) => {
             className="w-full flex flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-2"
           >
             <Link 
-              href="/properties" 
+              href="#" 
               className="btn-gold shadow-lg flex items-center gap-2 group"
             >
               Explore Properties
               <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
           </Link>
           <Link 
-              href="/contact" 
+              href="#" 
               className="btn-secondary border-white text-white hover:bg-white hover:text-luxury-black"
             >
               Schedule a Tour

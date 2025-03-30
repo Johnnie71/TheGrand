@@ -13,19 +13,20 @@ const AboutSection = () => {
             className='order-2 lg:order-1'
           >
             <span className='inline-block py-1 px-3 rounded-sm bg-gold-light/20 text-gold-dark text-sm uppercase tracking-wider font-medium mb-4'>
-              About The Grand
+              About The Brand
             </span>
             <h2 className='text-3xl md:text-4xl font-bold mb-6'>
               Setting the standard for Luxury Living
             </h2>
             <p className='text-luxury-gray mb-6 leading-relaxed'>
-              At The Grand, we believe that exceptional living is defined by attention to detail, quality craftsmanship, and uncompromising service. Our properties are meticulously designed to create spaces where elegance meets functionality, and luxury becomes a lifestyle.
+              At The Brand, we believe that exceptional living is defined by attention to detail, quality craftsmanship, and uncompromising service. Our properties are meticulously designed to create spaces where elegance meets functionality, and luxury becomes a lifestyle.
             </p>
             <p className='text-luxury-gray mb-8 leading-relaxed'>
               With a portfolio of distinctive residential buildings in the most sought-after locations, we offer more than just a home – we provide an elevated living experience that reflects your aspirations and complements your lifestyle.
             </p>
             <Link
-              href='/about'
+              // href='/about'
+              href='#'
               className='inline-flex items-center gap-2 text-luxury-black hover:text-gold-dark transition-colors font-medium group'
             >
               Learn more about us

@@ -46,7 +46,7 @@ const WhyUsSection = () => {
             Exceptional Features & Benefits
           </h2>
           <p className='text-lg text-luxury-black leading-relaxed'>
-            Discover what sets The Grand apart and why our residents choose to call our properties home.
+            Discover what sets The Brand apart and why our residents choose to call our properties home.
           </p>
         </AnimatedSection>
 

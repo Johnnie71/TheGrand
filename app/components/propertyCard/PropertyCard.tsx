@@ -37,7 +37,8 @@ const PropertyCard: React.FC<Props> = ({ property }) => {
           {shortDescription}
         </p>
         <Link
-          href={`/properties/${slug}`}
+          // href={`/properties/${slug}`}
+          href="#"
           className="inline-flex items-center text-sm font-medium text-gold-dark hover:text-gold group-hover:underline"
         >
           View Details

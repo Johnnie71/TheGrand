@@ -31,14 +31,14 @@ const Footer: React.FC<Props> = ({ footerData }) => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand Column */}
           <div className="space-y-6">
-            <Link href="/" className="inline-block">
+            {/* <Link href="/" className="inline-block"> */}
               <h2 className="text-2xl font-serif font-bold">
                 <span>The</span>
-                <span className="ml-1 text-gold-light">Grand</span>
+                <span className="ml-1 text-gold-light">Brand</span>
               </h2>
-            </Link>
+            {/* </Link> */}
             <p className="text-sm text-gray-300 leading-relaxed">
-              Redefining luxury living with exceptional properties and unmatched service. Experience the epitome of sophistication with The Grand.
+              Redefining luxury living with exceptional properties and unmatched service. Experience the epitome of sophistication with The Brand.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-gold-light transition-colors" aria-label="Facebook">
@@ -61,22 +61,22 @@ const Footer: React.FC<Props> = ({ footerData }) => {
             <h3 className="text-lg font-medium mb-6">Quick Links</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/" className="text-gray-300 hover:text-gold-light transition-colors text-sm">
+                <Link href="#" className="text-gray-300 hover:text-gold-light transition-colors text-sm">
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/properties" className="text-gray-300 hover:text-gold-light transition-colors text-sm">
+                <Link href="#" className="text-gray-300 hover:text-gold-light transition-colors text-sm">
                   Properties
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="text-gray-300 hover:text-gold-light transition-colors text-sm">
+                <Link href="#" className="text-gray-300 hover:text-gold-light transition-colors text-sm">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-gray-300 hover:text-gold-light transition-colors text-sm">
+                <Link href="#" className="text-gray-300 hover:text-gold-light transition-colors text-sm">
                   Contact
                 </Link>
               </li>
@@ -109,8 +109,8 @@ const Footer: React.FC<Props> = ({ footerData }) => {
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 text-gold-light mr-3 flex-shrink-0" />
-                <a href="mailto:info@thegrand.com" className="text-sm text-gray-300 hover:text-gold-light transition-colors">
-                  info@thegrand.com
+                <a href="" className="text-sm text-gray-300 hover:text-gold-light transition-colors">
+                  info@thebrand.com
                 </a>
               </li>
             </ul>
@@ -140,7 +140,7 @@ const Footer: React.FC<Props> = ({ footerData }) => {
         </div>
 
         <div className="mt-12 pt-8 border-t border-luxury-gray text-center text-sm text-gray-400">
-          <p>© {new Date().getFullYear()} The Grand. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} The Brand. All rights reserved.</p>
         </div>
       </div>
     </footer>

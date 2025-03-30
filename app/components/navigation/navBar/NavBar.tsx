@@ -38,7 +38,7 @@ const NavBar: React.FC<NavBarProps> = ({ toggle }) => {
           >
             <span className="text-2xl sm:text-3xl font-serif font-bold tracking-tight">
               <span>The</span>
-              <span className="ml-1 text-gold-dark">Grand</span>
+              <span className="ml-1 text-gold-dark">Brand</span>
             </span>
           </Link>
           
@@ -46,7 +46,7 @@ const NavBar: React.FC<NavBarProps> = ({ toggle }) => {
           <nav className="hidden md:flex items-center space-x-8">
             {links.map(link => (
               <Link
-                href={link.path}
+                href="#"
                 key={link.path}
                 className={`nav-link text-sm font-medium tracking-wide ${pathName == link.path ? 'nav-link-active' : ''}`}
               >
@@ -54,7 +54,7 @@ const NavBar: React.FC<NavBarProps> = ({ toggle }) => {
               </Link>
             ))}
             <Link 
-              href="/contact" 
+              href="#" 
               className="btn-primary text-sm px-5 py-2.5 shadow-sm"
             >
               Schedule Tour

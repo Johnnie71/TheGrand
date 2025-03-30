@@ -16,7 +16,7 @@ const ExperienceUsSection = () => {
       <div className='custom-container relative z-10'>
         <AnimatedSection className='max-w-3xl mx-auto text-center'>
           <span className='inline-block py-1 px-3 bg-gold-dark/30 text-gold-light text-sm uppercase tracking-wider font-medium mb-4 rounded-sm'>
-            Experience The Grand
+            Experience The Brand
           </span>
           <h2 className='text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-white'>
             Ready to Elevate Your Living Experience?
@@ -26,13 +26,15 @@ const ExperienceUsSection = () => {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
               <Link 
-                href="/properties" 
+                // href="/properties" 
+                href="#"
                 className="btn-gold shadow-lg"
               >
                 Explore Properties
               </Link>
               <Link 
-                href="/contact" 
+                // href="/contact" 
+                href="#"
                 className="btn-secondary border-white text-white hover:bg-white hover:text-luxury-black"
               >
                 Contact Us

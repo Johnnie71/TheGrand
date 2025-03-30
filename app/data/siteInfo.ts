@@ -32,14 +32,14 @@ interface SiteInfo {
 
 export const siteInfo: SiteInfo = {
   info: {
-    name: 'The Grand',
+    name: 'The Brand',
     description: 'Luxury residential buildings offering modern amenities and elegant living spaces.',
     mainImage: 'https://aareas.com/wp-content/uploads/2017/08/BLDG01-01.jpg',
     welcomeMessage: 'Experience Unparalleled Elegance in Every Detail',
-    welcomeDescription: 'The Grand offers exceptional residential properties that blend luxury, comfort, and sophisticated design.'
+    welcomeDescription: 'The Brand offers exceptional residential properties that blend luxury, comfort, and sophisticated design.'
   },
   contact: {
-    email: 'info@thegrandliving.com',
+    email: 'info@thebrandliving.com',
     phone: '(555) 123-4567',
     address: '"123 Main Street, Metropolis, NY 10001"'
   },

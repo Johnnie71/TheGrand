@@ -41,7 +41,7 @@ const FeaturedProperties: React.FC<Props> = ({ featured }) => {
 
         <AnimatedSection className="text-center">
           <Link 
-            href="/properties" 
+            href="#" 
             className="inline-flex items-center gap-2 text-luxury-black hover:text-gold-dark transition-colors font-medium group"
           >
             View All Properties
