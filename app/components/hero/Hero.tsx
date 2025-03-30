@@ -75,7 +75,7 @@ const Hero: React.FC<Props> = ({ info }) => {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute w-full bottom-6 flex justify-center items-center transform -translate-x-1/2 z-50 animate-bounce">
+      <div className="absolute w-full bottom-3 md:bottom-6 flex justify-center items-center transform -translate-x-1/2 z-50 animate-bounce">
         <div className="w-8 h-12 rounded-full border-2 border-white flex items-start justify-center">
           <div className="w-1 h-3 bg-white rounded-full mt-2 animate-[bounce_1.5s_infinite]"></div>
         </div>
