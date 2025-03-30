@@ -83,7 +83,8 @@ const NavBar: React.FC<NavBarProps> = ({ toggle }) => {
           <nav className='flex flex-col space-y-6 bg-white text-center p-10'>
             {links.map(link => (
               <Link
-                href={link.path}
+                // href={link.path}
+                href="#"
                 key={link.path}
                 className={`text-lg font-medium ${pathName == link.path ? 'text-gold-dark' : 'text-luxury-black'}`}
                 onClick={() => setIsMobileMenuOpen(false)}
@@ -92,7 +93,8 @@ const NavBar: React.FC<NavBarProps> = ({ toggle }) => {
               </Link>
             ))}
             <Link 
-              href="/contact" 
+              // href="/contact" 
+              href="#"
               className="btn-primary text-sm px-5 py-2.5 shadow-sm text-center"
             >
               Schedule Tour

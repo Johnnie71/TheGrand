@@ -25,13 +25,12 @@ const Hero: React.FC<Props> = ({ info }) => {
 
       {/* Content (Text) */}
       <div className="container-custom relative z-20 mt-16">
-        <div className='w-full md:max-w-3xl flex flex-col md:justify-start md:items-start justify-center items-center'>
+        <div className='w-full md:max-w-3xl flex flex-col md:justify-start md:items-start justify-center items-center gap-4 md:gap-10'>
           <AnimatedSection
             animation="fade-in"
             delay={300}
-            className="mb-4"
           >
-            <span className="inline-block py-1 px-3 rounded-sm bg-gold-dark text-white text-xs uppercase tracking-wider font-medium mb-4">
+            <span className="inline-block py-1 px-3 rounded-sm bg-gold-dark text-white text-xs uppercase tracking-wider font-medium">
               Luxury Living Redefined
             </span>
           </AnimatedSection>
@@ -39,9 +38,8 @@ const Hero: React.FC<Props> = ({ info }) => {
           <AnimatedSection
             animation="fade-in"
             delay={500}
-            className="mb-6"
           >
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 text-center md:text-left">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 md:mb-10 text-center md:text-left">
               {welcomeMessage}
             </h1>
           </AnimatedSection>
