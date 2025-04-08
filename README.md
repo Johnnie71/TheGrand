@@ -1,4 +1,26 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Property Website Prototype
+
+A responsive prototype website for a residential property company, built using **React**, **Next.js**, **TypeScript**, and **Tailwind CSS**.
+
+This project is part of a freelance initiative to provide a modern, user-friendly web presence for a local property management company that currently lacks an online platform.
+
+---
+
+## 🚀 Tech Stack
+
+- **Framework:** Next.js 13+
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **Deployment:** Vercel
+
+---
+
+## 🌐 Features
+
+- Responsive design (mobile, tablet, and desktop)
+- Clean, modern UI
+- Built with scalability and performance in mind
+- Component-based structure using React and Next.js App Router
 
 ## Getting Started
 
