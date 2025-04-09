@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import { Info } from '@/app/data/siteInfo';
 import AnimatedSection from '../animatedSection/AnimatedSection';
+import Image from 'next/image';
 
 interface Props {
   info: Info;
@@ -17,7 +18,8 @@ const Hero: React.FC<Props> = ({ info }) => {
       {/* Background Image Container with Filter */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
-        <img
+        <Image
+          alt='Hero Image'
           src={mainImage}
           className="absolute inset-0 w-full h-full object-cover object-center z-0"
         />
