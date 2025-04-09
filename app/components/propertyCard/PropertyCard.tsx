@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { MapPin, ArrowRight } from 'lucide-react';
 import { Property } from '@/app/data/properties';
+import Image from 'next/image';
 
 interface Props {
   property: Property;
@@ -14,7 +15,7 @@ const PropertyCard: React.FC<Props> = ({ property }) => {
     <div className="luxury-card group h-full flex flex-col">
       {/* Image Container */}
       <div className="relative overflow-hidden aspect-[3/2]">
-        <img
+        <Image
           src={mainImage}
           alt={name}
           className="w-full h-full object-cover object-center transform transition-transform duration-700 ease-out group-hover:scale-110"

@@ -4,6 +4,7 @@ import { properties, Property } from '../data/properties';
 import AnimatedSection from '../components/animatedSection/AnimatedSection';
 import { Building, MapPin, Search } from 'lucide-react';
 import PropertyCard from '../components/propertyCard/PropertyCard';
+import Image from 'next/image';
 
 const Properties = () => {
   const [displayedProperties, setDisplayedProperties] = useState<Property[]>(properties);
@@ -36,7 +37,7 @@ const Properties = () => {
       {/* Hero section */}
       <section className='relative py-20 bg-luxury-black'>
         <div className='absolute inset-0 opacity-30'>
-          <img 
+          <Image
               src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" 
               alt="Properties Hero" 
               className="w-full h-full object-cover object-center"
@@ -117,7 +118,7 @@ const Properties = () => {
               <Building className='h-16 w-16 text-luxury-gray/50 mx-auto mb-4' />
               <h3 className="text-xl font-medium mb-2">No properties found</h3>
               <p className="text-luxury-gray mb-6">
-                We couldn't find any properties matching your search criteria.
+                {`We couldn't find any properties matching your search criteria.`}
               </p>
               <button
                 onClick={handleReset}
