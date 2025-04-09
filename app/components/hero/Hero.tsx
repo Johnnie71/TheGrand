@@ -20,8 +20,11 @@ const Hero: React.FC<Props> = ({ info }) => {
         <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
         <Image
           alt='Hero Image'
+          layout="fill"
+          objectFit='cover'
+          objectPosition='center'
           src={mainImage}
-          className="absolute inset-0 w-full h-full object-cover object-center z-0"
+          className="absolute inset-0 z-0"
         />
       </div>
 
