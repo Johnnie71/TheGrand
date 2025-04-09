@@ -40,10 +40,13 @@ const AboutSection = () => {
             className='order-1 lg:order-2'
           >
             <div className="relative">
-              <Image 
+              <Image
+                layout="fill"
+                objectFit='cover'
+                objectPosition='center'
                 src="https://images.unsplash.com/photo-1600585154363-67eb9e2e2099?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" 
                 alt="Luxury Interior" 
-                className="w-full h-auto rounded-sm shadow-xl"
+                className="h-auto rounded-sm shadow-xl"
               />
                 <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-sm shadow-lg w-40 lg:w-48 hidden md:block">
                   <p className="text-gold-dark font-bold text-3xl lg:text-4xl mb-1">15+</p>

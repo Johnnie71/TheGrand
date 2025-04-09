@@ -38,9 +38,11 @@ const Properties = () => {
       <section className='relative py-20 bg-luxury-black'>
         <div className='absolute inset-0 opacity-30'>
           <Image
+            layout="fill"
+            objectFit='cover'
+            objectPosition='center'
               src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" 
               alt="Properties Hero" 
-              className="w-full h-full object-cover object-center"
             />
         </div>
         <div className='container-custom relative z-10 text-center'>
