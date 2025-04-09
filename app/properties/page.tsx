@@ -2,9 +2,8 @@
 import React, { useEffect, useState } from 'react';
 import { properties, Property } from '../data/properties';
 import AnimatedSection from '../components/animatedSection/AnimatedSection';
-import { MapPin, Search } from 'lucide-react';
-
-
+import { Building, MapPin, Search } from 'lucide-react';
+import PropertyCard from '../components/propertyCard/PropertyCard';
 
 const Properties = () => {
   const [displayedProperties, setDisplayedProperties] = useState<Property[]>(properties);
@@ -17,6 +16,20 @@ const Properties = () => {
     setSearchTerm('')
     setCityFilter('')
   }
+
+  useEffect(() => {
+    let filtered = properties;
+
+    if (searchTerm) {
+      filtered = filtered.filter(property => property.name.toLowerCase().includes(searchTerm.toLowerCase()) || property.description.toLowerCase().includes(searchTerm.toLowerCase()))
+    }
+
+    if (cityFilter) {
+      filtered = filtered.filter(property => property.city === cityFilter)
+    }
+
+    setDisplayedProperties(filtered)
+  }, [searchTerm, cityFilter])
 
   return (
     <div className='pt-20 animate-fade-in'>
@@ -93,6 +106,39 @@ const Properties = () => {
 
             </div>
           </AnimatedSection>
+        </div>
+      </section>
+
+      {/* Properties Section */}
+      <section className='py-6 bg-luxury-cream'>
+        <div className='container-custom'>
+          {displayedProperties.length === 0 ? (
+            <AnimatedSection className='text-center py-16'>
+              <Building className='h-16 w-16 text-luxury-gray/50 mx-auto mb-4' />
+              <h3 className="text-xl font-medium mb-2">No properties found</h3>
+              <p className="text-luxury-gray mb-6">
+                We couldn't find any properties matching your search criteria.
+              </p>
+              <button
+                onClick={handleReset}
+                className="btn-primary"
+              >
+                Reset Filters
+              </button>
+            </AnimatedSection>
+          ) : (
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
+              {displayedProperties.map((property, idx) => (
+                <AnimatedSection
+                  key={idx}
+                  animation='fade-in'
+                  delay={100 + (idx * 100)}
+                >
+                  <PropertyCard property={property} />
+                </AnimatedSection>
+              ))}
+            </div>
+          )}
         </div>
       </section>
     </div>
