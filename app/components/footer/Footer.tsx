@@ -1,5 +1,5 @@
 'use client'
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Twitter } from 'lucide-react';
 
@@ -24,6 +24,13 @@ interface Props {
 
 const Footer: React.FC<Props> = ({ footerData }) => {
   const { properties, socials } = footerData;
+
+  const [currentYear, setCurrentYear] = useState<number>(new Date().getFullYear());
+
+  useEffect(() => {
+    // Update the year after component mounts (only on the client)
+    setCurrentYear(new Date().getFullYear());
+  }, []);
 
   return (
     <footer className="bg-luxury-black text-white pt-16 pb-8">
@@ -140,7 +147,7 @@ const Footer: React.FC<Props> = ({ footerData }) => {
         </div>
 
         <div className="mt-12 pt-8 border-t border-luxury-gray text-center text-sm text-gray-400">
-          <p>© {new Date().getFullYear()} The Brand. All rights reserved.</p>
+          <p>© {currentYear} The Brand. All rights reserved.</p>
         </div>
       </div>
     </footer>
