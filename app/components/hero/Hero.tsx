@@ -64,7 +64,7 @@ const Hero: React.FC<Props> = ({ info }) => {
             className="w-full flex flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-2"
           >
             <Link 
-              href="#" 
+              href="/properties" 
               className="btn-gold shadow-lg flex items-center gap-2 group"
             >
               Explore Properties
