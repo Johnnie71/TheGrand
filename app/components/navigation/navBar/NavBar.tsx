@@ -46,7 +46,7 @@ const NavBar: React.FC<NavBarProps> = ({ toggle }) => {
           <nav className="hidden md:flex items-center space-x-8">
             {links.map(link => (
               <Link
-                href="#"
+                href={link.path == '/' ? '/' : "#"}
                 key={link.path}
                 className={`nav-link text-sm font-medium tracking-wide ${pathName == link.path ? 'nav-link-active' : ''}`}
               >

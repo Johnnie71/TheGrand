@@ -30,8 +30,7 @@ const ExperienceUsSection = () => {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
               <Link 
-                // href="/properties" 
-                href="#"
+                href="/properties"
                 className="btn-gold shadow-lg"
               >
                 Explore Properties
