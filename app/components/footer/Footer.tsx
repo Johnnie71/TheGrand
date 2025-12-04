@@ -25,13 +25,6 @@ interface Props {
 const Footer: React.FC<Props> = ({ footerData }) => {
   const { properties, socials } = footerData;
 
-  const [currentYear, setCurrentYear] = useState<number>(new Date().getFullYear());
-
-  useEffect(() => {
-    // Update the year after component mounts (only on the client)
-    setCurrentYear(new Date().getFullYear());
-  }, []);
-
   return (
     <footer className="bg-luxury-black text-white pt-16 pb-8">
       <div className="container-custom">
@@ -129,7 +122,7 @@ const Footer: React.FC<Props> = ({ footerData }) => {
             <p className="text-sm text-gray-300 mb-4">
               Subscribe to our newsletter for the latest updates and offers.
             </p>
-            <form className="space-y-3">
+            <form className="space-y-3" suppressHydrationWarning>
               <input
                 type="email"
                 placeholder="Your email address"
@@ -147,7 +140,7 @@ const Footer: React.FC<Props> = ({ footerData }) => {
         </div>
 
         <div className="mt-12 pt-8 border-t border-luxury-gray text-center text-sm text-gray-400">
-          <p>© {currentYear} The Brand. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} The Brand. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -12,13 +12,13 @@ export const metadata: Metadata = {
   description: "Discover The Brand – luxurious residential buildings offering modern living spaces with stunning amenities. Explore available apartments and find your next home today.",
 };
 
-const footerData = fetchFooterData()
-
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+  const footerData = fetchFooterData()
   
   return (
     <html lang="en">
