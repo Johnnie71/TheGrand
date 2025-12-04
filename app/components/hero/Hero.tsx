@@ -11,7 +11,7 @@ interface Props {
 }
 
 const Hero: React.FC<Props> = ({ info }) => {
-  const { mainImage, welcomeMessage, welcomeDescription } = info;
+  const { welcomeMessage, welcomeDescription } = info;
 
   return (
     <section id="hero" className="relative min-h-screen flex items-center py-20 overflow-hidden">
@@ -23,7 +23,7 @@ const Hero: React.FC<Props> = ({ info }) => {
           layout="fill"
           objectFit='cover'
           objectPosition='center'
-          src={mainImage}
+          src={"/3d-apartment-rendering.jpg"}
           className="absolute inset-0 z-0"
         />
       </div>
